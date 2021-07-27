@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+ box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body{
+  font-family: 'Lato', sans-serif;
+  background-image: url('./Images/pexelBack2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
   min-height: 100vh;
+  color: white;
+  display: grid;
+  place-items: center;
+}
+.App{
+  
+  
+  
+}
+.Forms{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: rgba(255, 255, 255, 0.781);  
+  border-radius: 5px;
+  overflow: hidden;
+}
+.Logo{
+  color: orange;
+  padding-right: 20px;
+}
+.Forms input{
+  outline: none;
+  font-family: 'Lato', sans-serif;
+  flex-grow: 1;
+  background-color: transparent;
+  border: none;
+  padding: 0px 10px;
+}
+.Forms  button{
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  background-color: orange;
+  color: black;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+}
+.Forms  button:hover{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.results{
+  width: 50%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.boxes{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 10px;
+ background-color: brown;
+ margin-bottom: 5px;
+}
+.Titles{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Titles h3{
+  padding: 10px;
+  font-size: 30px;
+}
+.Titles h4 ,.Titles span{
+ margin-bottom: 10px;
+ font-size: 14px;
 }
